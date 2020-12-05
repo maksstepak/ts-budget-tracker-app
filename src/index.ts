@@ -1,3 +1,5 @@
 import './scss/main.scss';
 
-console.log('it works');
+const test = 'hello world';
+
+console.log(test);
