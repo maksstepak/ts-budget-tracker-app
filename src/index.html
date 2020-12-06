@@ -23,11 +23,11 @@
 
     <main class="main">
       <div class="balance">
-        <h2 class="balance__amount">2200$</h2>
+        <h2 class="balance__amount" id="total-balance"></h2>
         <h3 class="balance__text">My current balance</h3>
       </div>
 
-      <form class="transaction">
+      <div class="transaction">
         <label for="name" class="transaction__label">Transaction name:</label>
         <input
           type="text"
@@ -47,18 +47,20 @@
         <div class="transaction__buttons">
           <button
             type="submit"
+            id="add-btn"
             class="transaction__button transaction__button--add"
           >
             <i class="fas fa-plus"></i> Add funds
           </button>
           <button
             type="submit"
+            id="sub-btn"
             class="transaction__button transaction__button--subtract"
           >
             <i class="fas fa-minus"></i> Subtract funds
           </button>
         </div>
-      </form>
+      </div>
 
       <div class="transactions">
         <table class="transactions__table">
@@ -68,20 +70,7 @@
               <th class="transactions__th">Amount</th>
             </tr>
           </thead>
-          <tbody>
-            <tr class="transactions__tr transactions__tr--subtract">
-              <td class="transactions__td">phone</td>
-              <td class="transactions__td">-500</td>
-            </tr>
-            <tr class="transactions__tr transactions__tr--subtract">
-              <td class="transactions__td">netflix</td>
-              <td class="transactions__td">-20</td>
-            </tr>
-            <tr class="transactions__tr transactions__tr--add">
-              <td class="transactions__td">salary</td>
-              <td class="transactions__td">+3000</td>
-            </tr>
-          </tbody>
+          <tbody id="transactions"></tbody>
         </table>
       </div>
     </main>
