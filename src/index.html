@@ -4,6 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budget Tracker App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Budget Tracker App</h1>
+    </header>
+
+    <main class="main">
+      <div class="balance">
+        <h2 class="balance__amount">2200$</h2>
+        <h3 class="balance__text">My current balance</h3>
+      </div>
+
+      <form class="transaction">
+        <label for="name" class="transaction__label">Transaction name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          class="transaction__input"
+        />
+        <label for="amount" class="transaction__label"
+          >Transaction amount:</label
+        >
+        <input
+          type="number"
+          id="amount"
+          placeholder="Amount"
+          class="transaction__input"
+        />
+        <div class="transaction__buttons">
+          <button
+            type="submit"
+            class="transaction__button transaction__button--add"
+          >
+            <i class="fas fa-plus"></i> Add funds
+          </button>
+          <button
+            type="submit"
+            class="transaction__button transaction__button--subtract"
+          >
+            <i class="fas fa-minus"></i> Subtract funds
+          </button>
+        </div>
+      </form>
+
+      <div class="transactions">
+        <table class="transactions__table">
+          <thead>
+            <tr class="transactions__tr transactions__tr--header">
+              <th class="transactions__th">Transaction</th>
+              <th class="transactions__th">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="transactions__tr transactions__tr--subtract">
+              <td class="transactions__td">phone</td>
+              <td class="transactions__td">-500</td>
+            </tr>
+            <tr class="transactions__tr transactions__tr--subtract">
+              <td class="transactions__td">netflix</td>
+              <td class="transactions__td">-20</td>
+            </tr>
+            <tr class="transactions__tr transactions__tr--add">
+              <td class="transactions__td">salary</td>
+              <td class="transactions__td">+3000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">Copyright &copy; 2020 Foo Bar</p>
+    </footer>
+  </body>
 </html>

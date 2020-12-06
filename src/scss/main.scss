@@ -1,4 +1,11 @@
-body {
-  background-color: #000000;
-  color: #ffffff;
-}
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/base';
+
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+@import 'components/balance';
+@import 'components/transaction';
+@import 'components/transactions';

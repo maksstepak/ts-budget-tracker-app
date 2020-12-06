@@ -1,0 +1,38 @@
+.transactions {
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 8px 0;
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__tr {
+    &--header {
+      background: $blue;
+    }
+
+    &--add {
+      background: $green;
+    }
+
+    &--subtract {
+      background: $red;
+    }
+  }
+
+  &__th {
+    border: 1px solid $white;
+    text-align: center;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__td {
+    border: 1px solid $white;
+    text-align: center;
+    padding: 4px;
+  }
+}

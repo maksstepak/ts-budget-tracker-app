@@ -1,0 +1,13 @@
+.balance {
+  text-align: center;
+
+  &__amount {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
